@@ -1,0 +1,289 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+body{
+    background: linear-gradient(to bottom right, lavenderblush, lightpink);
+    /*height: 100vh;*/
+}
+header{
+    /*min-height: vh;*/
+    width: 100%;
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 1% 5%;
+}
+nav img{
+    width: 80px;
+}
+.links{
+    text-align: right;
+}
+.links ul li{
+    list-style: none;
+    display: inline-block;
+    padding: 8px 10px;
+    border-left: hotpink 1px solid;
+}
+.links ul li:first-child{
+    border-left: none;
+}
+.links ul li a{
+    text-decoration: none;
+    color: hotpink;
+    font-weight: bold;
+    font-style: oblique;
+}
+.links ul li::after{
+    content: '';
+    width: 0;
+    height: 2px;
+    display: block;
+    background-color:  lightskyblue;
+    margin: auto;
+    transition: 0.5s;
+}
+.links ul li:hover::after{
+    width: 100%;
+}
+#ime{
+    display: flex;
+    align-items: center;
+}
+#ime h3{
+    margin-left: 3%;
+}
+
+
+.main{
+    width: 60%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 5%;
+    margin-left: 20%;
+}
+.levo{
+    background: url("images/profile.png")no-repeat;
+    /*margin-left: 20%;*/
+    width: 256px;
+    height: 256px;
+    padding-right: 15%;
+    scale: 130%;
+}
+.desno{
+    margin-top: 5%;
+}
+#gore{
+    text-align: left;
+    padding-left: 5%;
+}
+#gore h1{
+    font-style: oblique;
+    font-size: 50px;
+    border-bottom: black solid 2px;
+    width: 200px;
+    margin-bottom: 2%;
+}
+#dole{
+    display: flex;
+    justify-content: space-around;
+}
+#t{
+    background: url("images/pozadina.jpg")no-repeat;
+    width: 153px;
+    height: 157px;
+    border-radius: 80px;
+    scale: 70%;
+    text-align: center;
+}
+#t h3,#b h3,#a h3{
+    padding-top: 40%;
+    font-size: 25px;
+}
+#b{
+    background: url("images/pozadina.jpg")no-repeat;
+    width: 153px;
+    height: 157px;
+    border-radius: 80px;
+    scale: 70%;
+    text-align: center;
+}
+#a{
+    background: url("images/pozadina.jpg")no-repeat;
+    width: 153px;
+    height: 157px;
+    border-radius: 80px;
+    scale: 70%;
+    text-align: center;
+}
+#b:hover{
+    background: linear-gradient(to bottom right, beige, sandybrown);
+    cursor: pointer;
+}
+#a:hover{
+    background: linear-gradient(to bottom right, indianred, red);
+    cursor: pointer;
+}
+#t:hover{
+    background: linear-gradient(to bottom right, royalblue, limegreen);
+    cursor: pointer;
+}
+#a,#b,#t{
+    text-decoration: none;
+    color: black;
+}
+main, section, .grad{
+    margin-top: 3%;
+}
+main h1{
+    margin-left: 15%;
+    font-style: oblique;
+    font-size: 50px;
+    border-bottom: black solid 2px;
+    width: 200px;
+    margin-bottom: 1%;
+}
+.prvo, .vtor{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 2%;
+    width: 70%;
+    margin-left: 15%;
+    border-bottom: black solid 1px;
+}
+.prvo #dole{
+    width: 50%;
+}
+.vtor ul{
+    width: 55%;
+}
+#del{
+    display: flex;
+    justify-content: space-between;
+}
+.travel{
+    width: 70%;
+    margin-left: 15%;
+    align-items: center;
+    margin-bottom: 2%;
+    border-bottom: solid black 1px;
+    padding-bottom: 1%;
+}
+.milan{
+    margin-left: 2%;
+}
+section{
+    margin-left: 15%;
+    width: 70%;
+}
+section h1{
+    font-style: oblique;
+    font-size: 50px;
+    border-bottom: black solid 2px;
+    width: 300px;
+    margin-bottom: 2%;
+}
+#macaron{
+    font-style: oblique;
+    font-size: 50px;
+    border-bottom: black solid 2px;
+    width: 500px;
+    margin-bottom: 2%;
+}
+.blog{
+    align-items: center;
+    margin-bottom: 2%;
+    border-bottom: solid black 1px;
+    padding-bottom: 1%;
+    padding-right: 0.5%;
+}
+.blog h2, .blog p, .travel h2{
+    width: 300px;
+    a {
+        color: black;
+        text-decoration: none;
+    }
+}
+.blog h2::after, .travel h2::after{
+    content: '';
+    width: 0;
+    height: 2px;
+    display: block;
+    background-color:  black;
+    margin: auto;
+    transition: 0.5s;
+}
+.blog h2:hover::after, .travel h2:hover::after{
+    width: 80%;
+    margin-left: 0px;
+}
+section h2{
+    font-style: oblique;
+    margin-bottom: 2%;
+    margin-top: 1%;
+}
+section ol{
+    margin-left: 5%;
+    text-align: justify;
+    line-height: 1.5;
+}
+section ul{
+    margin-left: 5%;
+    line-height: 1.5;
+    width: 250px;
+    span{
+        font-weight: bold;
+        font-style: oblique;
+    }
+}
+#naslov{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+#naslov img{
+    margin-right: 2%;
+}
+.macaron{
+    display: flex;
+    justify-content: space-between;
+}
+.macaron div:nth-of-type(1){
+    padding-right: 5%;
+}
+#sliki{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 2%;
+}
+.grad{
+    width: 70%;
+    margin-left: 15%;
+}
+.grad h1{
+    font-style: oblique;
+    font-size: 45px;
+    border-bottom: black solid 2px;
+    text-align: center;
+    margin-bottom: 2%;
+}
+
+
+footer{
+    margin-top: 5%;
+    display: flex;
+    justify-content: space-around;
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-bottom: 2%;
+    border-top: black solid 2px;
+    padding-top: 2%;
+    text-align: center;
+    align-items: center;
+}
